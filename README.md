@@ -31,6 +31,8 @@ TYPEORM_PORT = 5432
 | ------ | ------ | ------ |  ------
 | POST | /clients | `{"name": string "client_code": string"birthday": string}` | Cria novo Cliente
 | GET | /clients/:id | **No body** | Vizualiza cliente por Id
+| GET | /files/:nome_da_foto_banco | **No body** | Url para vizualizar a foto do cliente salva no banco
 | GET | /clients | **No body**  | Vizualiza todos os clientes
 | PUT | /clients/:id | `{"name": string "client_code": string"birthday": string}` | Atualiza os dados do cliente
+| PATCH | /clients/profilePhoto/:id | **No body**  | Atualiza foto por id do cliente
 | DELETE | /clients/:id | **No body**  | Deleta cliente
