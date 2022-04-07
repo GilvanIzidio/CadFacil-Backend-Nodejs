@@ -7,7 +7,7 @@ export default class GetAllClientsController {
 
     const service = new GetAllClientsService();
 
-    const clients = await service.execute(name.toString());
+    const clients = await service.execute(name?.toString());
 
     return response.json(clients);
   }
